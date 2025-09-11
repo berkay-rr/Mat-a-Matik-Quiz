@@ -203,11 +203,11 @@ export default function App() {
 
   return (
     <div className='wrapper'>
-      <h1>Mat-a-Matik</h1>
+      {!gameStarted && <h1>Mat-a-Matik</h1>}
       {isHydrated && (
         <form onSubmit={handleSubmit}>
           <label>
-            <div className='problem-container'>{mathProblem.string}</div>
+            <div className='problem-container'>{ gameStarted && mathProblem.string}</div>
             <input
               type='number'
               name='value'
@@ -221,12 +221,11 @@ export default function App() {
           </label>
 
           <div className={`message-container ${messageClass}`}>
-            {answerStatus}
+            {recentStatusChange && answerStatus}
           </div>
 
           <div className='button-container'>
-            {gamePlayButtons}
-            {startButton}
+            {gameStarted ? gamePlayButtons : startButton}
           </div>
         </form>
       )}
