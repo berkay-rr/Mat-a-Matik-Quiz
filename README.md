@@ -5,5 +5,3 @@ React'te koşullu görüntülemeye yaklaşabileceğiniz birkaç yol vardır:
     - Mantıksal AND (&&) operatörü
     - Üçlü operatör
     - JSX'i bir değişkene koşullu olarak atama
-
-Bunlardan herhangi birini kullanabilirsiniz. Ayrıca, bileşenin state'lerine aşina olmak ve challenge'ı gerçekleştirmede nasıl kullanılabileceklerini görmek için App bileşenindeki showStates fonksiyonunu kullanma hakkındaki ipucunu takip ettiğinizden emin olun.  -->
